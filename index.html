@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shafian Khan - Software & DevOps Engineer Portfolio. Creator of FluxGit, Google Student Ambassador, and Hackathon winner.">
+    <title>Shafian Khan | Software & DevOps Engineer</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css?v=2.4.3">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg width='800px' height='800px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='System / Terminal'%3E%3Cpath id='Vector' d='M17 15H12M7 10L10 12.5L7 15M3 15.8002V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V15.8031C21 16.921 21 17.48 20.7822 17.9074C20.5905 18.2837 20.2837 18.5905 19.9074 18.7822C19.48 19 18.921 19 17.8031 19H6.19691C5.07899 19 4.5192 19 4.0918 18.7822C3.71547 18.5905 3.40973 18.2837 3.21799 17.9074C3 17.4796 3 16.9203 3 15.8002Z' stroke='%2300b4d8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E">
+</head>
+<body class="scanlines">
+    <!-- Cursor Glow effect -->
+    <div id="cursor-glow"></div>
+
+    <!-- Floating blurred Navigation Bar -->
+    <header class="navbar-container" id="global-nav">
+        <a href="#home" class="nav-brand">
+            SHAFIAN.IO <span class="brand-dot">_</span>
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certs">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-actions">
+            <button id="toggle-mode">
+                <i class="fa-solid fa-terminal"></i> Terminal Mode
+            </button>
+        </div>
+    </header>
+
+    <!-- GUI MODE SECTION -->
+    <main id="gui-mode">
+        <!-- Hero wrapper -->
+        <section id="home" class="hero-wrapper reveal">
+            <div class="hero-content">
+                <h2>System Architect & Software Engineer</h2>
+                <h1>Designing Next-Gen Systems & Cloud Architectures</h1>
+                <p class="hero-subtitle">B.E. in Artificial Intelligence and Data Science @ ISL Engineering College, 2026</p>
+                <p class="hero-desc">
+                    Creator of <strong>FluxGit</strong>, 4-time national hackathon victor, and Google Student Ambassador. Experienced in Rust system design, cloud-native container orchestration, and multi-provider LLM runtime orchestration.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn-primary">
+                        <i class="fa-solid fa-paper-plane"></i> Contact Me
+                    </a>
+                    <button id="hero-terminal-btn" class="btn-secondary">
+                        <i class="fa-solid fa-terminal"></i> Launch Terminal Shell
+                    </button>
+                    <a href="https://drive.google.com/file/d/1oYyyiTomG4TCOi64vYukwYnui2kDIOfh/view?usp=sharing" target="_blank" class="btn-secondary">
+                        <i class="fa-solid fa-download"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <!-- Profile Image card widget -->
+                <div class="profile-card glass-panel" style="margin-bottom: 24px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; padding: 24px;">
+                    <div class="profile-image-container">
+                        <img src="images/shafian_profile.png" alt="Shafian Khan">
+                    </div>
+                    <div>
+                        <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 4px; color: var(--text);">Shafian Khan</h3>
+                        <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--primary); background: rgba(0, 180, 216, 0.1); padding: 2px 8px; border-radius: 12px; border: 1px solid rgba(0, 180, 216, 0.2);">Google Student Ambassador</span>
+                    </div>
+                </div>
+                <!-- System Diagnostics mini console widget -->
+                <div class="diag-card glass-panel">
+                    <div class="diag-header">
+                        <div class="diag-title">
+                            <span class="diag-pulse"></span> shafian@portfolio:~
+                        </div>
+                        <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-dark);">v2.4.0</span>
+                    </div>
+                    <div class="diag-body">
+                        <div class="diag-row">
+                            <span>Status:</span>
+                            <span class="diag-val" style="color: var(--success)">Open to work</span>
+                        </div>
+                        <div class="diag-row">
+                            <span>OS Platform:</span>
+                            <span class="diag-val">ArchLinux / WebGL</span>
+                        </div>
+                        <div class="diag-row">
+                            <span>Shell Env:</span>
+                            <span class="diag-val">zsh 5.9</span>
+                        </div>
+                        <div class="diag-row">
+                            <span>Timezone:</span>
+                            <span class="diag-val">Asia/Kolkata</span>
+                        </div>
+                        <div class="diag-row">
+                            <span>Uptime:</span>
+                            <span class="diag-val" id="diag-uptime">Uptime ...</span>
+                        </div>
+                        <div class="diag-row">
+                            <span>System Load:</span>
+                            <span class="diag-val" style="color: var(--accent)">0.02 / 100% OK</span>
+                        </div>
+                    </div>
+                    <div class="diag-console">
+                        <div style="color: var(--text-dark); margin-bottom: 4px;">// Type 'help' or 'matrix' here:</div>
+                        <div style="display: flex;">
+                            <span style="color: var(--primary); margin-right: 6px;">$</span>
+                            <input type="text" id="mini-input" style="background:transparent; border:none; color:inherit; outline:none; font-family:inherit; font-size:inherit; flex:1;" placeholder="try: help">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Dossier -->
+        <section id="about" class="reveal">
+            <h2 class="section-title"><i class="fa-solid fa-user-gear"></i> Dossier</h2>
+            <div class="about-grid glass-panel">
+                <div class="about-summary">
+                    <p>
+                        I am a passionate Software Engineer and DevOps architect with a focus on building native systems tools, cloud infrastructure, and AI orchestration pipelines. As a developer, I focus on performance engineering, resource efficiency, and automated delivery networks.
+                    </p>
+                    <p>
+                        Throughout my undergraduate career, I've served as a student community lead, built and published research-grade software clients, and directed tech initiatives, managing large-scale team operations under high-intensity developer events.
+                    </p>
+                    <p>
+                        Whether coding low-latency system shells in <strong>Rust</strong>, configuring high-availability Kubernetes microservices, or building modern interfaces, I focus on clean abstraction patterns and zero-drift deployment models.
+                    </p>
+                </div>
+                <div class="about-quick-specs">
+                    <div class="spec-item">
+                        <span class="spec-label">Location</span>
+                        <span class="spec-val">Hyderabad, India</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Degree</span>
+                        <span class="spec-val">B.E. in AI and Data Science</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">College</span>
+                        <span class="spec-val">ISL Engineering College (2026)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Focus Areas</span>
+                        <span class="spec-val">Systems, Cloud, Web & DevOps</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="reveal">
+            <h2 class="section-title"><i class="fa-solid fa-screwdriver-wrench"></i> Skills & Stack</h2>
+            <div class="glass-panel">
+                <div class="skills-tabs" id="skills-tab-list">
+                    <!-- Tabs rendered dynamically or static for ease -->
+                    <button class="skills-tab-btn active" data-tab="devops">DevOps &amp; Cloud</button>
+                    <button class="skills-tab-btn" data-tab="languages">Languages</button>
+                    <button class="skills-tab-btn" data-tab="web">Web Frameworks</button>
+                    <button class="skills-tab-btn" data-tab="tools">Databases &amp; Tools</button>
+                </div>
+                
+                <div class="skills-panes" id="skills-panes-list">
+                    <!-- DevOps & Cloud (default active) -->
+                    <div class="skills-pane active" id="pane-devops">
+                        <div class="skill-card">
+                            <div class="skill-card-header"><i class="fa-brands fa-aws" style="color: #ff9900;"></i><span>AWS</span></div>
+                            <div class="skill-card-details">EC2, S3, RDS, Lambda, VPC, ECS, EKS, CloudWatch, ALB, IAM Security.</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header"><i class="fa-solid fa-cubes" style="color: #326ce5;"></i><span>Kubernetes</span></div>
+                            <div class="skill-card-details">Zero-downtime blue-green rollouts, cluster orchestration, container replication.</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header"><i class="fa-brands fa-docker" style="color: #384d54;"></i><span>Docker</span></div>
+                            <div class="skill-card-details">Microservices containerization, multi-stage builds optimization, compose templates.</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header"><i class="fa-solid fa-cloud-arrow-up" style="color: #7b42bc;"></i><span>Terraform</span></div>
+                            <div class="skill-card-details">Infrastructure as Code (IaC), multi-provider modules, cloud state drift control.</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header"><i class="fa-brands fa-github" style="color: #777;"></i><span>GitHub Actions</span></div>
+                            <div class="skill-card-details">Automated testing, multi-platform artifact signing, cross-compilation chains.</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header"><i class="fa-brands fa-gitlab" style="color: #e24329;"></i><span>GitLab CI/CD</span></div>
+                            <div class="skill-card-details">Enterprise runner deployment, private repository build automation loops.</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header"><i class="fa-solid fa-gears" style="color: #ee0000;"></i><span>Ansible</span></div>
+                            <div class="skill-card-details">Configuration playbooks, automated remote servers bootstrap setups.</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header"><i class="fa-brands fa-microsoft" style="color: #0078d4;"></i><span>Azure</span></div>
+                            <div class="skill-card-details">Microsoft Cloud fundamental tools, virtual machines, resource groups.</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header"><i class="fa-brands fa-google" style="color: #ea4335;"></i><span>GCP</span></div>
+                            <div class="skill-card-details">Google Cloud architectures, GKE nodes, storage buckets, networking layers.</div>
+                        </div>
+                    </div>
+                    <!-- Languages -->
+                    <div class="skills-pane" id="pane-languages">
+                        <div class="skill-card">
+                            <div class="skill-card-header"><i class="fa-brands fa-rust" style="color: #dea584;"></i><span>Rust</span></div>
+                            <div class="skill-card-details">Systems programming, Tauri desktop shells, native libgit2 bindings integration.</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header"><i class="fa-brands fa-golang" style="color: #00add8;"></i><span>Go</span></div>
+                            <div class="skill-card-details">Concurrent systems development, custom microservices, high-performance CLI utilities.</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header"><i class="fa-brands fa-java" style="color: #e28743;"></i><span>Java</span></div>
+                            <div class="skill-card-details">Enterprise backend logic, Object-Oriented software architectures, algorithms.</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header"><i class="fa-brands fa-python" style="color: #3572a5;"></i><span>Python</span></div>
+                            <div class="skill-card-details">Algorithmic optimization, KNN machine learning, Streamlit analytics dashboards.</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header"><i class="fa-solid fa-c" style="color: #a8b9cc;"></i><span>C</span></div>
+                            <div class="skill-card-details">Low-level pointer management, native operating system interfaces, core shell coding.</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header"><i class="fa-brands fa-js" style="color: #f1e05a;"></i><span>JavaScript</span></div>
+                            <div class="skill-card-details">Modern ES6+ frontend scripting, DOM interactions, cross-platform client logic.</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header"><i class="fa-brands fa-js" style="color: #3178c6;"></i><span>TypeScript</span></div>
+                            <div class="skill-card-details">Strongly-typed application code, scalable software modules compile checks.</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header"><i class="fa-solid fa-database" style="color: #e38c00;"></i><span>SQL</span></div>
+                            <div class="skill-card-details">Complex queries, database optimizations, Postgres indexing, execution plans.</div>
+                        </div>
+                    </div>
+                    <!-- Web Frameworks -->
+                    <div class="skills-pane" id="pane-web">
+                        <div class="skill-card">
+                            <div class="skill-card-header"><i class="fa-solid fa-fire" style="color: #ff3e00;"></i><span>SvelteKit 5</span></div>
+                            <div class="skill-card-details">High-performance reactive frontend interfaces, client side compile bindings.</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header"><i class="fa-solid fa-n" style="color: #fff;"></i><span>Next.js</span></div>
+                            <div class="skill-card-details">React framework routing, server-side rendering (SSR), optimized build structures.</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header"><i class="fa-brands fa-react" style="color: #00d8ff;"></i><span>React.js</span></div>
+                            <div class="skill-card-details">Component-based architectures, complex state flows, custom hooks libraries.</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header"><i class="fa-brands fa-node-js" style="color: #8cc84b;"></i><span>Node.js</span></div>
+                            <div class="skill-card-details">Asynchronous REST APIs design, file systems interop, server networking layers.</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header"><i class="fa-solid fa-desktop" style="color: #ffd166;"></i><span>Tauri</span></div>
+                            <div class="skill-card-details">Rust desktop application development, multi-platform native shell window builders.</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header"><i class="fa-brands fa-html5" style="color: #e34c26;"></i><span>HTML5</span></div>
+                            <div class="skill-card-details">Semantic layout structures, responsive layouts, forms validations parameters.</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header"><i class="fa-solid fa-wind" style="color: #38bdf8;"></i><span>Tailwind CSS</span></div>
+                            <div class="skill-card-details">Utility-first styles configuration, layouts responsiveness variables grids.</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header"><i class="fa-solid fa-network-wired" style="color: #555;"></i><span>RESTful APIs</span></div>
+                            <div class="skill-card-details">Endpoint design structures, payload validation, CORS configs.</div>
+                        </div>
+                    </div>
+                    <!-- Databases & Tools -->
+                    <div class="skills-pane" id="pane-tools">
+                        <div class="skill-card">
+                            <div class="skill-card-header"><i class="fa-brands fa-git-alt" style="color: #f1502f;"></i><span>libgit2</span></div>
+                            <div class="skill-card-details">Native Git engine bindings integration, low-latency versioning shell parser.</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header"><i class="fa-solid fa-database" style="color: #0064a5;"></i><span>PostgreSQL</span></div>
+                            <div class="skill-card-details">Relational schemas, foreign keys joins, indexes optimization, transactions safety.</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header"><i class="fa-solid fa-database" style="color: #00758f;"></i><span>MySQL</span></div>
+                            <div class="skill-card-details">Production-grade SQL structures, database partitioning, queries scheduling.</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header"><i class="fa-solid fa-database" style="color: #4db33d;"></i><span>MongoDB</span></div>
+                            <div class="skill-card-details">Document-based NoSQL stores, aggregate queries frameworks, scalability.</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header"><i class="fa-solid fa-fire-flame-curved" style="color: #ffa611;"></i><span>Firestore</span></div>
+                            <div class="skill-card-details">Real-time database sync hooks, security rules configs, document graphs.</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header"><i class="fa-solid fa-server" style="color: #65c1ae;"></i><span>IPFS</span></div>
+                            <div class="skill-card-details">Decentralized content-addressable storage network design, Web3 integrations.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="reveal">
+            <h2 class="section-title"><i class="fa-solid fa-diagram-project"></i> Key Projects</h2>
+            <div class="projects-grid">
+                <!-- FluxGit -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon-box">
+                            <i class="fa-brands fa-rust"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/shafiankhan" target="_blank" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" target="_blank" aria-label="Project Website"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">FluxGit</h3>
+                    <p class="project-desc">
+                        Open-source cross-platform desktop Git client with an abstract multi-provider AI engine. Native shell using Rust & libgit2 bindings (tree parsing &lt;50ms, memory &lt;142MB). Orchestrates Gemini and local Ollama inference models. Published at the Conference on Software Engineering and AI Tools, 2026.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Tauri</span>
+                        <span class="project-tag">Rust</span>
+                        <span class="project-tag">SvelteKit 5</span>
+                        <span class="project-tag">Gemini AI</span>
+                    </div>
+                </div>
+
+                <!-- RepoSage -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon-box">
+                            <i class="fa-brands fa-react"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/shafiankhan" target="_blank" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" target="_blank" aria-label="Project Website"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">RepoSage</h3>
+                    <p class="project-desc">
+                        Enterprise repository analyzer. Containerized microservices via Docker and orchestrated zero-downtime blue-green deployments on Kubernetes. Integrated secure GitHub Actions pipelines targeting production AWS EC2 clusters to optimize evaluations by 35%.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Next.js 14</span>
+                        <span class="project-tag">Kubernetes</span>
+                        <span class="project-tag">Docker</span>
+                        <span class="project-tag">AWS</span>
+                    </div>
+                </div>
+
+                <!-- Loan Repayment ML -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon-box">
+                            <i class="fa-brands fa-python"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/shafiankhan" target="_blank" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" target="_blank" aria-label="Project Website"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Loan Repayment ML Platform</h3>
+                    <p class="project-desc">
+                        Fintech algorithmic optimization toolkit. Visualizes repayment strategies using KNN models via a Streamlit dashboard. Underlying cloud configurations are fully automated using Terraform IaC layers to eliminate server drift.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Streamlit</span>
+                        <span class="project-tag">Gemini AI</span>
+                        <span class="project-tag">Terraform</span>
+                    </div>
+                </div>
+
+                <!-- HelpChain & D-Host -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon-box">
+                            <i class="fa-solid fa-server"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/shafiankhan" target="_blank" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" target="_blank" aria-label="Project Website"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">HelpChain & D-Host</h3>
+                    <p class="project-desc">
+                        Web3 crowdfunding dApp and decentralized web hosting automation platform. Built on IPFS architecture and blockchain smart contracts, cutting centralized storage dependencies via immutable execution schemas.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Web3</span>
+                        <span class="project-tag">IPFS</span>
+                        <span class="project-tag">Solidity</span>
+                        <span class="project-tag">Vite.js</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Honors, Leadership & Experience Timeline -->
+        <section id="experience" class="reveal">
+            <h2 class="section-title"><i class="fa-solid fa-award"></i> Leadership & Honors</h2>
+            <div class="experience-layout">
+                <div>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; color: var(--primary); margin-bottom: 20px; font-family: var(--font-mono); font-size: 0.95rem;">&gt; COMMUNITY_ADVOCACY</h3>
+                    <div class="timeline glass-panel">
+                        <!-- Google Student Ambassador -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-header">
+                                <span class="timeline-title">Google Student Ambassador</span>
+                                <span class="timeline-date">2024 – 2026</span>
+                            </div>
+                            <div class="timeline-org">Campus Lead & Technical Organizer</div>
+                            <ul class="timeline-details">
+                                <li>Global Recognition: Selected to attend Google I/O 2026 in Mountain View, CA, as a top-performing ambassador, validating technical advocacy.</li>
+                                <li>Community Scale: Spearheaded technology initiatives, developer tracks, and training programs on campus for AI frameworks.</li>
+                            </ul>
+                        </div>
+                        <!-- Coding Club -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-header">
+                                <span class="timeline-title">Campus Coding Club Head</span>
+                                <span class="timeline-date">2024 – 2026</span>
+                            </div>
+                            <div class="timeline-org">National Hackathon Team Leader</div>
+                            <ul class="timeline-details">
+                                <li>Hackathon Victories: Directed competitive strategy and engineered core technical architectures to win 4 major national hackathons.</li>
+                                <li>Club Leadership: Ran 10+ campus hackathons and workshops, managing statement curation and evaluation for 500+ student developers.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; color: var(--primary); margin-bottom: 20px; font-family: var(--font-mono); font-size: 0.95rem;">&gt; VIRTUAL_INTERNSHIPS</h3>
+                    <div class="timeline glass-panel">
+                        <!-- AWS Generative AI -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-header">
+                                <span class="timeline-title">AWS Generative AI Internship</span>
+                                <span class="timeline-date">Oct – Dec 2025</span>
+                            </div>
+                            <div class="timeline-org">Generative AI Infrastructure</div>
+                            <ul class="timeline-details">
+                                <li>Configured generative models infrastructure and scaling patterns on AWS environments.</li>
+                            </ul>
+                        </div>
+                        <!-- AWS Cloud -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-header">
+                                <span class="timeline-title">AWS Cloud Internship</span>
+                                <span class="timeline-date">Oct – Dec 2024</span>
+                            </div>
+                            <div class="timeline-org">Cloud Infrastructure</div>
+                            <ul class="timeline-details">
+                                <li>Practiced core infrastructure orchestration (VPC, IAM, EC2, CloudWatch).</li>
+                            </ul>
+                        </div>
+                        <!-- Google AI-ML -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-header">
+                                <span class="timeline-title">Google AI-ML Internship</span>
+                                <span class="timeline-date">Apr – Jun 2024</span>
+                            </div>
+                            <div class="timeline-org">Core Engineering</div>
+                            <ul class="timeline-details">
+                                <li>Familiarized with ML pipelines, training architectures, and deep neural nets operations.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section id="certs" class="reveal">
+            <h2 class="section-title"><i class="fa-solid fa-certificate"></i> Certifications</h2>
+            <div class="certs-grid">
+                <!-- CKA -->
+                <div class="cert-card" data-brand="kubernetes">
+                    <div class="cert-icon-wrapper">
+                        <i class="fa-solid fa-cubes"></i>
+                    </div>
+                    <div class="cert-info">
+                        <span class="cert-name">Certified Kubernetes Administrator (CKA)</span>
+                        <span class="cert-meta">Linux Foundation</span>
+                    </div>
+                </div>
+                <!-- Docker -->
+                <div class="cert-card" data-brand="docker">
+                    <div class="cert-icon-wrapper">
+                        <i class="fa-brands fa-docker"></i>
+                    </div>
+                    <div class="cert-info">
+                        <span class="cert-name">Docker Certified Associate</span>
+                        <span class="cert-meta">Mirantis / Docker Inc</span>
+                    </div>
+                </div>
+                <!-- AWS Solutions Architect -->
+                <div class="cert-card" data-brand="aws">
+                    <div class="cert-icon-wrapper">
+                        <i class="fa-brands fa-aws"></i>
+                    </div>
+                    <div class="cert-info">
+                        <span class="cert-name">AWS Certified Solutions Architect</span>
+                        <span class="cert-meta">Amazon Web Services</span>
+                    </div>
+                </div>
+                <!-- Azure Fundamentals -->
+                <div class="cert-card" data-brand="azure">
+                    <div class="cert-icon-wrapper">
+                        <i class="fa-brands fa-microsoft"></i>
+                    </div>
+                    <div class="cert-info">
+                        <span class="cert-name">Microsoft Azure Fundamentals</span>
+                        <span class="cert-meta">Microsoft</span>
+                    </div>
+                </div>
+                <!-- Google Facilitator -->
+                <div class="cert-card" data-brand="google">
+                    <div class="cert-icon-wrapper">
+                        <i class="fa-brands fa-google"></i>
+                    </div>
+                    <div class="cert-info">
+                        <span class="cert-name">Google Cloud Facilitator</span>
+                        <span class="cert-meta">Google Cloud (2024-25)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="reveal">
+            <h2 class="section-title"><i class="fa-solid fa-envelope-open-text"></i> Connect Shell</h2>
+            <div class="contact-terminal-wrapper">
+                <div class="contact-header">
+                    <span class="titlebar-dot close"></span>
+                    <span class="titlebar-dot minimize"></span>
+                    <span class="titlebar-dot maximize"></span>
+                    <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-dark); margin-left: 10px;">shafian@connection-hub:~/</span>
+                </div>
+                <div class="contact-body">
+                    <p style="color: var(--text-dark); margin-bottom: 8px;">// Initialize network hook...</p>
+                    <p style="color: var(--success); margin-bottom: 12px;">$ ping -c 1 shafian.io</p>
+                    <p style="color: var(--text-muted); margin-bottom: 16px;">64 bytes from shafian.io (127.0.0.1): icmp_seq=1 ttl=64 time=0.035 ms</p>
+                    <p style="color: var(--primary); margin-bottom: 16px;">&gt; Connection established successfully. Select channel below:</p>
+                    
+                    <div class="contact-btn-row">
+                        <a href="mailto:mshafianak@gmail.com" class="contact-btn">
+                            <i class="fa-solid fa-envelope"></i> Email
+                        </a>
+                        <a href="https://linkedin.com/in/shafian/" target="_blank" class="contact-btn">
+                            <i class="fa-brands fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/shafiankhan" target="_blank" class="contact-btn">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FULLSCREEN TERMINAL EMULATOR MODE -->
+    <div id="terminal" class="hidden">
+        <div class="terminal-window">
+            <div class="terminal-titlebar">
+                <div class="titlebar-dots">
+                    <span class="titlebar-dot close" id="term-close-btn" style="cursor: pointer;"></span>
+                    <span class="titlebar-dot minimize"></span>
+                    <span class="titlebar-dot maximize"></span>
+                </div>
+                <div class="titlebar-text">visitor@shafian-khan:~/portfolio</div>
+                <div class="titlebar-actions" style="display: flex; gap: 8px;">
+                    <div class="theme-pill" id="theme-btn">theme: default</div>
+                    <div class="theme-pill" id="gui-back-btn"><i class="fa-solid fa-desktop"></i> Back to GUI</div>
+                </div>
+            </div>
+            <div class="terminal-body" id="term-body">
+                <div id="output"></div>
+                <div class="input-line">
+                    <span class="prompt">visitor@shafian-khan:~$</span>
+                    <input type="text" id="input" class="input" autofocus>
+                </div>
+                <!-- Dynamic Matrix overlay canvas -->
+                <canvas id="matrix-canvas" class="hidden"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Status Bar Footer -->
+    <footer id="status-bar">
+        <span id="time"><i class="fa-regular fa-clock"></i> Loading...</span>
+        <span><i class="fa-solid fa-circle-check" style="color: var(--success);"></i> Last deploy: GitHub Actions passing</span>
+        <span id="load-avg"><i class="fa-solid fa-microchip"></i> Uptime: 99.99%</span>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js?v=2.4.1"></script>
+</body>
+</html>
